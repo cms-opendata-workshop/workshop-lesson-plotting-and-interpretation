@@ -113,6 +113,17 @@ to get a feel for the physics.
 
 ### 
 
+You can download the files and code by checking out the master branch of this
+lesson.
+
+~~~
+cd
+git clone -b master git://github.com/cms-opendata-workshop/workshop-lesson-plotting-and-interpretation
+~~~
+{: .bash-language}
+
+This can take a few minutes as it's about 60 MB of files. 
+
 
 
 {% include links.md %}
