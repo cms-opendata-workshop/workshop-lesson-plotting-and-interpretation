@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-teaching: 0
-exercises: 0
+teaching: 5
+exercises: 10
 questions:
 - "How do I make plots of the skimmed datasets?"
 - "How do I setup my ROOT environment?"
