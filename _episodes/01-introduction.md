@@ -124,6 +124,84 @@ git clone -b master git://github.com/cms-opendata-workshop/workshop-lesson-plott
 
 This can take a few minutes as it's about 60 MB of files. 
 
+Once it's downloaded, you can descend into the appropriate directory. 
+We'll also want to make a `plots` directory here. The set of commands
+is given below. 
+
+~~~
+cd workshop-lesson-plotting-and-interpretation/scripts_and_data
+mkdir plots
+ls -l
+~~~
+{: .bash-language}
+~~~
+-rw-r--r-- 1 root root  7524470 Oct  1 05:20 DYJetsToLLSkim.root
+-rw-r--r-- 1 root root   786366 Oct  1 05:20 GluGluToHToTauTauSkim.root
+-rw-r--r-- 1 root root 13548245 Oct  1 05:20 Run2012B_TauPlusXSkim.root
+-rw-r--r-- 1 root root 20688325 Oct  1 05:20 Run2012C_TauPlusXSkim.root
+-rw-r--r-- 1 root root  4769020 Oct  1 05:20 TTbarSkim.root
+-rw-r--r-- 1 root root  1156105 Oct  1 05:20 VBF_HToTauTauSkim.root
+-rw-r--r-- 1 root root  3591969 Oct  1 05:20 W1JetsToLNuSkim.root
+-rw-r--r-- 1 root root  5965972 Oct  1 05:20 W2JetsToLNuSkim.root
+-rw-r--r-- 1 root root  3520631 Oct  1 05:20 W3JetsToLNuSkim.root
+-rw-r--r-- 1 root root     3048 Oct  1 05:20 compare_two_files.py
+-rw-r--r-- 1 root root     3264 Oct  1 05:20 dump_and_plot.py
+-rw-r--r-- 1 root root     5864 Oct  1 05:20 histograms.py
+-rw-r--r-- 1 root root     7655 Oct  1 05:20 plot.py
+drwxr-xr-x 2 root root     4096 Oct  1 05:24 plots
+~~~
+{. .output}
+
+
+## Testing ROOT
+
+From this directory, lets try opening one of these files, the signal Monte Carlo, 
+`GluGluToHToTauTauSkim.root`.
+
+We can do this from the ROOT C-interpreter.
+
+~~~
+root GluGluToHToTauTauSkim.root
+~~~
+{: .language-bash}
+~~~
+   ------------------------------------------------------------------
+  | Welcome to ROOT 6.22/02                        https://root.cern |
+  | (c) 1995-2020, The ROOT Team; conception: R. Brun, F. Rademakers |
+  | Built for linuxx8664gcc on Aug 18 2020, 07:08:00                 |
+  | From tag , 17 August 2020                                        |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q'       |
+   ------------------------------------------------------------------
+
+root [0]
+Attaching file GluGluToHToTauTauSkim.root as _file0...
+(TFile *) 0x56356e5cf260
+~~~
+{: .output}
+
+> ## Testing X11 forward (for some users)
+> If you have been able to enable X11 forwarding, you can launch
+> the ROOT TBrowser to inspect the ROOT file and see what is in there. 
+>
+> Assuming you have run the previous ROOT command and are in the CINT, you can now
+> ~~~
+> root [1] TBrowser b;
+> ~~~
+> {: .code}
+> And you should see the TBrowser pop up. 
+> ![](../assets/img/root_tbrowser_00.png)
+> Double-click on the 
+> `GluGluToHToTauTauSkim.root` and then `Events` and you can browse the entries and make
+> some histograms. 
+> ![](../assets/img/root_tbrowser_01.png)
+{: .challenge}
+
+Whether or not you have gotten X11 working, you can exit ROOT by typing `.q`.
+~~~
+root [2] .q
+~~~
+{: .code}
+
 
 
 {% include links.md %}
