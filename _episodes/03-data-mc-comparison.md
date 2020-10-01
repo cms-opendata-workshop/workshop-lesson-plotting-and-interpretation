@@ -103,7 +103,7 @@ Once we're in the ROOT CINT, we can do the following to see all the histograms i
 ~~~
 _file0->ls()
 ~~~
-{: .code}
+{: .language-cpp}
 ~~~
 TFile**		histograms.root
  TFile*		histograms.root

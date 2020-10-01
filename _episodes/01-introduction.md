@@ -63,7 +63,7 @@ docker start -i root6
 ~~~
 {: .language-bash}
 
-Note that when the container starts up, you are in the '/' directory. You will want to 
+Note that when the container starts up, you are in the `/` directory. You will want to 
 get to the home directory
 `/root` by typing
 
@@ -111,8 +111,6 @@ and make some first-order plots.
 If you haven't yet, you may want to check out the [analysis](http://opendata.cern.ch/record/12350)
 to get a feel for the physics. 
 
-### 
-
 You can download the files and code by checking out the master branch of this
 lesson.
 
@@ -120,7 +118,7 @@ lesson.
 cd
 git clone -b master git://github.com/cms-opendata-workshop/workshop-lesson-plotting-and-interpretation
 ~~~
-{: .bash-language}
+{: .language-bash}
 
 This can take a few minutes as it's about 60 MB of files. 
 
@@ -133,7 +131,8 @@ cd workshop-lesson-plotting-and-interpretation/scripts_and_data
 mkdir plots
 ls -l
 ~~~
-{: .bash-language}
+{: .language-bash}
+
 ~~~
 -rw-r--r-- 1 root root  7524470 Oct  1 05:20 DYJetsToLLSkim.root
 -rw-r--r-- 1 root root   786366 Oct  1 05:20 GluGluToHToTauTauSkim.root
@@ -150,7 +149,7 @@ ls -l
 -rw-r--r-- 1 root root     7655 Oct  1 05:20 plot.py
 drwxr-xr-x 2 root root     4096 Oct  1 05:24 plots
 ~~~
-{. .output}
+{: .output}
 
 
 ## Testing ROOT
@@ -187,7 +186,7 @@ Attaching file GluGluToHToTauTauSkim.root as _file0...
 > ~~~
 > root [1] TBrowser b;
 > ~~~
-> {: .code}
+> {: .language-cpp}
 > And you should see the TBrowser pop up. 
 > ![](../assets/img/root_tbrowser_00.png)
 > Double-click on the 
@@ -200,7 +199,7 @@ Whether or not you have gotten X11 working, you can exit ROOT by typing `.q`.
 ~~~
 root [2] .q
 ~~~
-{: .code}
+{: .language-cpp}
 
 
 

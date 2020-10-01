@@ -93,8 +93,7 @@ To uncomment the code, look for three `'''` that are at the beginning and end
 of this code block and put a `#` in front of them.
 
 ~~~
-'''
-
+#'''
 
 # Create a canvas to draw on
 # canvas(name, title, x (upper corner), y (upper corner), width (pixels), height (pixels))
@@ -131,9 +130,9 @@ ROOT.gPad.Update()
 # Save the plot as an image. This is useful in case our
 # canvas doesn't stay active
 canvas.SaveAs("plots/TEST_pt_1.png")
-'''
+#'''
 ~~~
-{: .code}
+{: .language-python}
 
 Now we'll run the code again. You can just repeat the same command as before, in which 
 case it will produce a `.png` file that you can copy out of the environment. 
@@ -150,7 +149,7 @@ You can exit the interactive python environment by typing
 ~~~
 quit()
 ~~~
-{: code}
+{: .language-python}
 
 If you were not able to get X11 working, you'll want to copy the `plots` subdirectory
 out of the environment and on to your local machine so you can inspect the figures. 
@@ -186,7 +185,7 @@ of this code block and put a `#` in front of them.
 
 
 ~~~
-'''
+#'''
 # Create a canvas to draw on
 # canvas(name, title, x (upper corner), y (upper corner), width (pixels), height (pixels))
 canvas = ROOT.TCanvas("canvas","canvas",10,10,1200,800)
@@ -236,9 +235,9 @@ ROOT.gPad.Update()
 # canvas doesn't stay active
 canvas.SaveAs("plots/TEST_muon_plots.png")
 
-'''
+#'''
 ~~~
-{: .code}
+{: .language-python}
 
 Run it on that same file.
 ~~~
@@ -277,7 +276,7 @@ look at the code to get a sense of what is happening.
 ~~~
 python -i compare_two_files.py GluGluToHToTauTauSkim.root W1JetsToLNuSkim.root
 ~~~
-{: language-bash}
+{: .language-bash}
 
 The red markers are the first file you pass in and the black markers are the second. 
 
