@@ -3,6 +3,9 @@ layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
+
+![](assets/img/plotting_and_interpretation_logo.png)
+
 This exercise will walk you through the process of making some basic plots, once
 you have skimmed some data and produced ROOT files. We'll make these plots
 using ROOT and calling ROOT from python using the PyROOT module. Note, that you could
